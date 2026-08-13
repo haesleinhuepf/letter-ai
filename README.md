@@ -1,6 +1,6 @@
-# letter-ai
+# Privacy-preserving, transparent AI-assistance for writing letters (letter-ai)
 
-`letter-ai` is a pip-installable command-line tool for privately reading past letters and drafting new ones using a locally installed large language model.
+`letter-ai` is a pip-installable command-line tool for privately reading past letters and drafting new ones using a locally installed large language model. Under the hood it uses pre-existing letters and corresponding summary text files for [few-shot prompting](https://en.wikipedia.org/wiki/Prompt_engineering#Multi-shot). Below you find instructions how to setup a database of synthetic letters to avoid using personal data directly for prompting and to avoid [information leakage](https://en.wikipedia.org/wiki/Information_leakage).
 
 ![](docs/teaser.png)
 
@@ -17,8 +17,9 @@ To setup a folder of example letters that do not contain any information about r
 4. Modify the generated DOCX to fit your needs and facts.
 5. Delete the source letters containing information from actual people from the folder `~/.letter-ai` once you are done.
 6. Pass the AI-generated letters using `letter-ai read old-letter.docx`
+7. Finally go through all .txt files in `~/.letter-ai` and make sure that they do not contain any personal information.
 
-Following this strategy, only the AI-generated files are stored in letter-ai's database of example letters. 
+Following this strategy, only the AI-generated synnthetic letters and summaries are stored in letter-ai's database of example letters. 
 
 Alternatively, if you don't want to use letters about real people at all, consider AI-generating letters as demonstrated in [generate_mock_letters.ipynb](docs/generate_mock_letters.ipynb).
 
