@@ -1,6 +1,6 @@
 # Privacy-preserving, transparent AI-assistance for writing letters (letter-ai)
 
-`letter-ai` is a pip-installable command-line tool for privately reading past letters and drafting new ones using a locally installed large language model. Under the hood it uses pre-existing letters and corresponding summary text files for [few-shot prompting](https://en.wikipedia.org/wiki/Prompt_engineering#Multi-shot). Below you find instructions how to setup a database of synthetic letters to avoid using personal data directly for prompting and to avoid [information leakage](https://en.wikipedia.org/wiki/Information_leakage).
+`letter-ai` is a pip-installable command-line tool for privately reading past letters and drafting new ones using a locally installed large language model (LLM). Under the hood it uses pre-existing letters and corresponding summary text files for [few-shot prompting](https://en.wikipedia.org/wiki/Prompt_engineering#Multi-shot). Below you find instructions how to setup a database of synthetic letters to avoid using personal data directly for prompting and to avoid [information leakage](https://en.wikipedia.org/wiki/Information_leakage).
 
 ![](docs/teaser.png)
 
@@ -8,7 +8,7 @@ Note: This is a research tool not intended for production use.
 
 ## Privacy first
 
-Letter-ai uses a local model per default for privacy reasons. The default is to use [Ollama](https://ollama.com) with `gemma3:4b`; this keeps personal letters on your machine. It is not recommended to use remote servers for such purposes, in particular if you don't know what the remote peer does with the data you send there.
+Letter-ai uses a local LLM per default for privacy reasons. The default is to use [Ollama](https://ollama.com) with `gemma3:4b`; this keeps personal letters on your machine. It is not recommended to use remote servers for such purposes, in particular if you don't know what the remote service provider does with the data you send there.
 
 To setup a folder of example letters that do not contain any information about real people, follow this workflow:
 
@@ -29,9 +29,9 @@ Overall the goal should be to have no personal data in the long-term storage `~/
 
 ## Usage
 
-Write bullet points about the project or person you want to write a letter for/about in a textr file, e.g. "request.txt".
+Write bullet points about the project or person you want to write a letter for/about in a textr file, e.g. `request.txt.
 
-run this command to AI-generate a letter:
+Afterwards, run this command to AI-generate a letter and open it with Word:
 
 ```bash
 letter-ai write request.txt
@@ -74,7 +74,7 @@ On macOS/Linux, use `export` instead of `set`.
 
 ## Commands
 
-Read and archive a DOCX letter:
+Read. summarize and archive a DOCX letter:
 
 ```bash
 letter-ai read support-letter.docx
