@@ -13,7 +13,7 @@ Letter-ai uses a local LLM per default for privacy reasons. The default is to us
 To setup a folder of example letters that do not contain any information about real people, follow this workflow:
 
 1. Read letters you wrote in the past with `letter-ai read old-letter.docx`. It will extract the text from the letters, categorize the letter and summarize the content. Text and summary are saved in the folder `~/.letter-ai`. 
-2. Write some "request.txt" files with random content, e.g. bullet points for a recommendation letter. Draft a new letter with `letter-ai write request.txt`. Do this multiple times with multiple contents to generate a base of letters with randomish content. 
+2. Write some `request.txt` files with random content, e.g. bullet points for a recommendation letter. Draft a new letter with `letter-ai write request.txt`. Do this multiple times with multiple contents to generate a base of letters with randomish content. 
 4. Modify the generated DOCX to fit your needs and facts.
 5. Delete the source letters containing information from actual people from the folder `~/.letter-ai` once you are done.
 6. Pass the AI-generated letters using `letter-ai read old-letter.docx`
@@ -29,7 +29,7 @@ Overall the goal should be to have no personal data in the long-term storage `~/
 
 ## Usage
 
-Write bullet points about the project or person you want to write a letter for/about in a textr file, e.g. `request.txt.
+Write bullet points about the project or person you want to write a letter for/about in a textr file, e.g. `request.txt`.
 
 Afterwards, run this command to AI-generate a letter and open it with Word:
 
@@ -48,7 +48,7 @@ letter-ai write request.txt --template template.docx --output generated-letter.d
 
 ```bash
 git clone https://github.com/haesleinhuepf/letter-ai
-
+cd letter-ai
 pip install .
 ```
 
