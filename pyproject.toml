@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "letter-ai"
+version = "0.1.0"
+description = "Read and draft letters with a local LLM"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "openai>=1.40.0",
+  "python-docx>=1.1.0",
+]
+[project.optional-dependencies]
+test = ["pytest>=8.0"]
+
+[project.scripts]
+letter-ai = "letter_ai.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/letter_ai"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,11 @@
+I would like to write a recommendation letter for Dr. Robert Haase
+
+- Dr. Haase is described as an outstanding scientist with intellectual curiosity and a commitment to good scientific practice.
+- He is a computer scientist who works in artificial intelligence, data science, life-sciences and microscopy bio-image analysis. He manages this multi-disciplinary ground excellently.
+- He excels at teaching and mentoring, sharing expertise in AI agentic systems and data analysis with patience and clarity.
+- He contributes significantly through open-source software development (example projects: CLIJ, clesperanto, bia-bob, git-bob, sand-bob).
+- His technical skills include experience with machine learning, Python, OpenCL, and various image analysis frameworks.
+- He is capable of setting up computational infrastructure and collaborating on custom pipelines.
+- He is strong in science communication and globally known for his work on scientific software.
+- In the recent years, he focuses on agentic system, e.g. for automating data analysis processes and also academic paperwork.
+- Dr. Haase possesses strong communication skills and a dedication to delivering high-quality solutions.
