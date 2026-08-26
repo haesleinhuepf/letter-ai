@@ -4,7 +4,8 @@
 
 ![](docs/teaser.png)
 
-Note: This is a research tool not intended for production use.
+Note: This is a research tool not intended for production use. 
+In case you use it to write real letters, check contents carefully. Language models may halucinate false contents.
 
 ## Features
 
